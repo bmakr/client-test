@@ -19,7 +19,7 @@ export default function Home() {
       }
   
       const response = await res.json()
-      console.log({ response })
+      console.log({ response }) 
       return response
   
     } catch (e) {
