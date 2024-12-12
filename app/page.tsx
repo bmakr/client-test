@@ -26,7 +26,7 @@ export default function Home() {
       console.error('Login error:', e)
       return { 
         error: e instanceof Error ? e.message : 'Unknown error occurred', 
-        status: 500 
+        status: 500
       }
     }
   }
