@@ -29,7 +29,7 @@ export default function Home() {
         status: 500 
       }
     }
-  }
+  } 
 
   return (
     <div className={styles.page}>
