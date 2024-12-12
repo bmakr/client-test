@@ -40,3 +40,18 @@ a {
     color-scheme: dark;
   }
 }
+
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  background: #033165;
+  box-shadow: none;
+  border: none;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
