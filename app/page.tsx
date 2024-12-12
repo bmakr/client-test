@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 export default function Home() {
   async function handler() {
     try {
-      const res = await fetch('https://actued.com/api/auth/login', {
+      const res = await fetch('https://actuali.net/api/auth/login', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${55}`,
@@ -19,7 +19,7 @@ export default function Home() {
       }
   
       const response = await res.json()
-      console.log({ response }) 
+      console.log({ response })
       return response
   
     } catch (e) {
