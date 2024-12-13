@@ -9,7 +9,8 @@ export default function Home() {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${55}`,
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'x-vercel-protection-bypass':'f8d3c9b7a2e1f4g5h6j7k8l9m0n1o2p3'
         },
         body: JSON.stringify({ sessionId: 0 })
       })
