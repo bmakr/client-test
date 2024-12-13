@@ -5,16 +5,16 @@ import styles from "./page.module.css";
 export default function Home() {
   async function handler() {
     try {
-      const VERCEL_BYPASS_TOKEN = process.env.VERCEL_BYPASS_TOKEN as string
+      console.log(process.env)
+      const VERCEL_BYPASS_TOKEN = process.env.NEXT_PUBLIC_VERCEL_BYPASS_TOKEN as string
       if (!VERCEL_BYPASS_TOKEN) {
         throw new Error('VERCEL_BYPASS_TOKEN is not defined')
       }
-      const res = await fetch('https://actuali.net/api/auth/login', { 
+      const res = await fetch(`https://actuali.net/api/auth/login?x-vercel-protection-bypass=${VERCEL_BYPASS_TOKEN}`, { 
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${55}`,
-          'Content-Type': 'application/json',
-          'x-vercel-protection-bypass': VERCEL_BYPASS_TOKEN
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({ sessionId: 0 })
       })
