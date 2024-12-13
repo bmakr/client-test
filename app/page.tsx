@@ -9,7 +9,7 @@ export default function Home() {
       if (!VERCEL_BYPASS_TOKEN) {
         throw new Error('VERCEL_BYPASS_TOKEN is not defined')
       }
-      const res = await fetch('https://actuali.net/api/auth/login', {
+      const res = await fetch('https://actuali.net/api/auth/login', { 
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${55}`,
